@@ -1,5 +1,4 @@
-'use strict'
-gulp       = require 'gulp'
+gulp  = require 'gulp'
 
 require './gulp'
 
