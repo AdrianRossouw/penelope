@@ -1,9 +1,6 @@
 gulp       = require 'gulp'
 gp         = (require 'gulp-load-plugins') lazy: false
 path       = require 'path'
-browserify = require 'browserify'
-source     = require 'vinyl-source-stream'
-
 
 # CSS
 gulp.task 'css', ->
