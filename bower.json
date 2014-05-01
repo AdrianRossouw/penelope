@@ -13,6 +13,7 @@
     "tests"
   ],
   "dependencies": {
-    "famous": "git@github.com:Famous/famous.git#v0.1.2"
+    "famous": "git@github.com:Famous/famous.git#v0.1.2",
+    "normalize.css": "~3.0.1"
   }
 }
