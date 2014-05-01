@@ -1,0 +1,7 @@
+require './gulp/html'
+require './gulp/css'
+require './gulp/js'
+require './gulp/img'
+require './gulp/clean'
+require './gulp/connect'
+require './gulp/watch'
