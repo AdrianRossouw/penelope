@@ -13,7 +13,7 @@ gulp.task 'watch', ['connect'], ->
       when '.jade', '.md', '.svg'
         taskname = 'html'
         reloadasset = 'www/index.html'
-      when '.sass'
+      when '.less'
         taskname = 'css'
         reloadasset = 'www/css/main.css'
       when '.coffee', '.js'

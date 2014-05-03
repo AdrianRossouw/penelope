@@ -1,21 +1,29 @@
+_ = require 'underscore'
 Engine = require 'famous/core/Engine'
 Surface = require 'famous/core/Surface'
 Modifier = require 'famous/core/Modifier'
+Scrollview = require 'famous/views/Scrollview'
+
 
 # Create the main context
 mainContext = Engine.createContext()
 
-outline = new Surface
-  size: [200, 200]
-  content: 'Hello world in Famo.us'
-  classes: ['bgColor']
-  properties:
-    lineHeight: '200px'
-    textAlign: 'center'
 
-outlineModifier = new Modifier
-  origin: [0.5, 0.5]
+surfs = []
 
-mainContext
-  .add outlineModifier
-  .add outline
+scrollView = new Scrollview()
+
+_(document.querySelectorAll('.slide')).each (el, i) ->
+  surfs.push new Surface(
+    content: '123' # el.cloneNode(true)
+    size: [undefined, undefined],
+    properties:
+      backgroundColor: "hsl(" + (i * 360 / 8) + ", 100%, 50%)",
+      color: "#404040",
+      lineHeight: '200px',
+      textAlign: 'center')
+
+  el.parentNode.removeChild(el)
+
+scrollView.sequenceFrom surfs
+mainContext.add scrollView

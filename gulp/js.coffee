@@ -12,8 +12,8 @@ gulp.task 'js', ->
   .transform 'coffeeify'
   .transform 'deamdify'
   .transform 'debowerify'
-  .transform 'uglifyify'
-  .bundle()
+  #.transform 'uglifyify'
+  .bundle debug: true
   # Pass desired file name to browserify with vinyl
   .pipe source 'main.js'
   # Start piping stream to tasks!
