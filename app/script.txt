@@ -4,16 +4,16 @@ Showing an abstract page layout with primary colors,
 
         NARRATOR
 
-    Thomas was a div.
+    Penelope was a div.
 
 Focus in on thomas the single red div in all the other beige ones.
 
         NARRATOR
 
-    Unlike his .siblings, Thomas didn't like how his .parents always bossed
+    Unlike his .siblings, Penelope didn't like how his .parents always bossed
     him around. "Stand over there", they'd say. "Repaint", they'd say.
 
-    Thomas yearned for more.
+    Penelope yearned for more.
 
 Focus out on the whole layout, with thomas jumping out and landing on the
 floor with a thud
