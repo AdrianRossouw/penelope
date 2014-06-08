@@ -11,12 +11,16 @@ var Wall            = require('famous/physics/constraints/Wall');
 
 var mainContext = Engine.createContext();
 
-console.log(mainContext.getSize());
 var surface = new Surface({
-    size: [384,216],
+    size: [3840,2160],
     classes: ['board'],
 });
 
+/*var leftWall    = new Wall({normal : [1,0,0],  distance : contextSize[0]/2.0, restitution : 0.5});
+var rightWall   = new Wall({normal : [-1,0,0], distance : contextSize[0]/2.0, restitution : 0.5});
+var topWall     = new Wall({normal : [0,1,0],  distance : contextSize[1]/2.0, restitution : 0.5});
+var bottomWall  = new Wall({normal : [0,-1,0], distance : contextSize[1]/2.0, restitution : 0.5});
+*/
 var modifier = new StateModifier({
     origin: [0.5, 0.5]
 });
