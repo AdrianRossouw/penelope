@@ -15,5 +15,8 @@
   "dependencies": {
     "famous": "git@github.com:Famous/famous.git#v0.1.2",
     "normalize.css": "~3.0.1"
+  },
+  "resolutions": {
+    "famous": "v0.2.1"
   }
 }
