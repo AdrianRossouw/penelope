@@ -1,7 +1,7 @@
 require './html'
 require './css'
 require './js'
-require './img'
 require './clean'
+require './img'
 require './connect'
 require './watch'

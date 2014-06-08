@@ -16,7 +16,7 @@ gulp.task 'watch', ['connect'], ->
       when '.less'
         taskname = 'css'
         reloadasset = 'www/css/main.css'
-      when '.coffee', '.js'
+      when '.js'
         taskname = 'js'
         reloadasset = 'www/js/main.js'
       else

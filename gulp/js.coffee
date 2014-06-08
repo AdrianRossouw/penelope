@@ -7,9 +7,8 @@ source     = require 'vinyl-source-stream'
 # JS
 gulp.task 'js', ->
   browserify
-    entries: ['./app/js/main.coffee']
-    extensions: ['.coffee', '.js']
-  .transform 'coffeeify'
+    entries: ['./app/js/main.js']
+    extensions: ['.js']
   .transform 'deamdify'
   .transform 'debowerify'
   #.transform 'uglifyify'
